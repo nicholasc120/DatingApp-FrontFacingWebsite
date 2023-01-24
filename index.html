@@ -3,6 +3,7 @@
 
 <head>
     <title>GraduDate</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -32,10 +33,12 @@
         }
 
         body {
+            background-image: url(./images/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             background-color: #D7F2BA;
             /* Set the background color of the page */
             font-family: 'Autour One', sans-serif;
-            color: #676F54;
             display: flex;
             align-items: center;
             /* Center the content vertically */
@@ -59,13 +62,20 @@
             min-height: calc(100vh - 5em);
             /* Min height is the height of the viewport minus the height of the footer */
         }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
     </style>
 </head>
 
 <body>
     <div class="center">
         <div class="container">
-            <h1 class="my-5 text-center">GraduDate</h1>
+            <img src="./images/Logo.svg" class="center-img" />
             <p class="text-center">
                 GraduDate is the ultimate dating app for post-secondary students. Whether you're looking for a serious
                 relationship, a casual fling, or just someone to hang out with, GraduDate has you covered. Unlike other
