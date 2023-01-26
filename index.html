@@ -5,9 +5,9 @@
     <title>GraduDate</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /*Add styles for the main content*/
         /*Add styles for the footer*/
@@ -32,42 +32,65 @@
             margin-right: 1em;
         }
 
-        body {
-            background-image: url(./images/background.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #D7F2BA;
-            /* Set the background color of the page */
-            font-family: 'Autour One', sans-serif;
-            display: flex;
-            align-items: center;
-            /* Center the content vertically */
-            justify-content: center;
-            /* Center the content horizontally */
+        @media (max-width: 800px) {
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            body {
+                font-size: small;
+                background-image: url(./images/background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #D7F2BA;
+                /* Set the background color of the page */
+                font-family: 'Autour One', sans-serif;
+                display: flex;
+                align-items: center;
+                /* Center the content vertically */
+                justify-content: center;
+                /* Center the content horizontally */
+                max-width: 100%;
+                overflow-x: hidden;
+            }
         }
 
-        h1 {
-            font-size: 8em;
-            font-family: 'Yellowtail', cursive;
-            color: white;
-            text-shadow: 5px 5px 8px #000000;
-        }
+        @media (min-width: 800px) {
 
-        .center {
-            display: flex;
-            align-items: center;
-            /* Center the content vertically */
-            justify-content: center;
-            /* Center the content horizontally */
-            min-height: calc(100vh - 5em);
-            /* Min height is the height of the viewport minus the height of the footer */
-        }
+            .center {
+                display: flex;
+                align-items: center;
+                /* Center the content vertically */
+                justify-content: center;
+                /* Center the content horizontally */
+                min-height: calc(100vh);
+                /* Min height is the height of the viewport minus the height of the footer */
+            }
 
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 60%;
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+            }
+
+            body {
+                font-size: x-large;
+                background-image: url(./images/background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #D7F2BA;
+                /* Set the background color of the page */
+                font-family: 'Autour One', sans-serif;
+                display: flex;
+                align-items: center;
+                /* Center the content vertically */
+                justify-content: center;
+                /* Center the content horizontally */
+            }
         }
     </style>
 </head>
