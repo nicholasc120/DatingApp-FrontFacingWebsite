@@ -1,161 +1,171 @@
 /*Add styles for the main content*/
-        /*Add styles for the footer*/
-        footer {
-            background-color: #676F54;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-            width: 100%;
-            /* Extend the width of the footer to the full width of the window */
-            position: fixed;
-            /* Make the footer fixed to the bottom of the page */
-            bottom: 0;
-            /* Position the footer at the bottom of the page */
-            left: 0;
-            /* Position the footer at the left of the page */
-        }
+/*Add styles for the footer*/
+footer {
+  background-color: #676f54;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+  /* Extend the width of the footer to the full width of the window */
+  position: fixed;
+  /* Make the footer fixed to the bottom of the page */
+  bottom: 0;
+  /* Position the footer at the bottom of the page */
+  left: 0;
+  /* Position the footer at the left of the page */
+}
 
-        .download {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 25vh;
-            height: 10vh;
-        }
+.download {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25vh;
+  height: 10vh;
+}
 
-        @media (max-width: 800px) {
-            footer a {
-                color: #fff;
-                margin-right: 1em;
-                font-size: small;
-            }
+.button {
+  background-color: #79b4a9;
+  border-radius: 50px;
+  padding: 5%;
+  box-shadow: 5px 10px #555555;
+}
 
-            .center {
-                display: flex;
-                align-items: center;
-                /* Center the content vertically */
-                justify-content: center;
-                /* Center the content horizontally */
-                min-height: calc(100vh);
-            }
+@media (max-width: 800px) {
+  footer a {
+    color: #fff;
+    margin-right: 1em;
+    font-size: small;
+  }
 
-            .text-content {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 60%;
-                font-size: medium;
-            }
+  .button a {
+    font-size: small;
+  }
 
-            .logo {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 80%;
-                padding-bottom: 10%;
-                padding-top: 10%
-            }
+  .center {
+    display: flex;
+    align-items: center;
+    /* Center the content vertically */
+    justify-content: center;
+    /* Center the content horizontally */
+    min-height: calc(100vh);
+  }
 
+  .text-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: medium;
+  }
 
-            body {
-                background-image: url(../images/background.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: #D7F2BA;
-                font-family: 'Autour One', sans-serif;
-            }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
 
-            .content {
-                padding-bottom: 20%
-            }
+  body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d7f2ba;
+    font-family: "Autour One", sans-serif;
+  }
 
-            .container {
-                justify-content: center;
-                flex-wrap: wrap;
-            }
+  .content {
+    padding-bottom: 20%;
+  }
 
-            .screenshot {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 30vh;
-                height: 70vh;
-                padding-bottom: 15%;
-            }
+  .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-            .download-appstore {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 22vh;
-                height: 10vh;
-            }
-        }
+  .screenshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    height: 70vh;
+    padding-bottom: 15%;
+  }
 
-        @media (min-width: 800px) {
-            footer a {
-                color: #fff;
-                margin-right: 1em;
-                font-size: large;
-            }
+  .download-appstore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22vh;
+    height: 10vh;
+  }
+}
 
-            .center {
-                display: flex;
-                align-items: center;
-                /* Center the content vertically */
-                justify-content: center;
-                /* Center the content horizontally */
-                min-height: calc(100vh);
-                /* Min height is the height of the viewport minus the height of the footer */
-                width: 60%;
-                padding-bottom: 5%;
-            }
+@media (min-width: 800px) {
+  footer a {
+    color: #fff;
+    margin-right: 1em;
+    font-size: large;
+  }
 
-            .logo {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-                padding-top: 5%
-            }
+  .center {
+    display: flex;
+    align-items: center;
+    /* Center the content vertically */
+    justify-content: center;
+    /* Center the content horizontally */
+    min-height: calc(100vh);
+    /* Min height is the height of the viewport minus the height of the footer */
+    width: 60%;
+    padding-bottom: 5%;
+  }
 
-            body {
-                background-image: url(../images/background.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: #D7F2BA;
-                font-family: 'Autour One', sans-serif;
-            }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 5%;
+  }
 
-            .content {
-                font-size: x-large;
-                /* Set the background color of the page */
-                display: flex;
-                align-items: center;
-                /* Center the content vertically */
-                justify-content: center;
-                /* Center the content horizontally */
-            }
+  body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d7f2ba;
+    font-family: "Autour One", sans-serif;
+  }
 
-            .container {
-                justify-content: center;
-            }
+  .content {
+    font-size: x-large;
+    /* Set the background color of the page */
+    display: flex;
+    align-items: center;
+    /* Center the content vertically */
+    justify-content: center;
+    /* Center the content horizontally */
+  }
 
-            .screenshot {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 40vh;
-                height: 60vh;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
+  .container {
+    justify-content: center;
+  }
 
-            .download-appstore {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 20.5vh;
-                height: 10vh;
-            }
-        }
+  .screenshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vh;
+    height: 60vh;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .download-appstore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20.5vh;
+    height: 10vh;
+  }
+}
