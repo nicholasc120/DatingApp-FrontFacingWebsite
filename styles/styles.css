@@ -32,6 +32,10 @@ footer {
   margin-top: 5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 800px) {
   .about-center {
     justify-content: center;
@@ -116,6 +120,9 @@ footer {
     padding-right: 10%;
   }
 
+  .right-column {
+    text-align: center;
+  }
   .left-column > p {
     text-align: center;
   }
@@ -218,5 +225,10 @@ footer {
   .right-column {
     flex-basis: 40%;
     text-align: center;
+  }
+
+  .small-column {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
